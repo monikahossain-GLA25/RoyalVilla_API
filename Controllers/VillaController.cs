@@ -11,5 +11,10 @@ namespace RoyalVilla_API.Controllers
         {
             return "Get All Villas";
         }
+        [HttpGet("{id}")]
+        public string GetVilla(int id)
+        {
+            return $"Get Villa with Id: {id}";
+        }
     }
 }
