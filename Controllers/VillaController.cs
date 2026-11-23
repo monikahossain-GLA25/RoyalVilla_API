@@ -3,12 +3,10 @@
 namespace RoyalVilla_API.Controllers
 {
     [ApiController]
-
-
+    [Route("api/villa")]
     public class VillaController : ControllerBase
     {
         [HttpGet]
-        [Route("villas")]
         public string GetVillas()
         {
             return "Get All Villas";
